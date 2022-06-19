@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap');
+
+:root {
+    --p: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+header {
+    position: relative;
+    height: 100vh;
+    width:100%;
+}
+
+.video {
+position: absolute;
+object-fit: cover;
+height: 100%;
+width: 100%;
+filter: brightness(30%);
+animation-name: video;
+animation-duration:2s;
+animation-play-state: paused;
+}
+
+@keyframes video {
+from{filter:brightness(60%);}
+to{filter:brightness(30%);}
+}
+
+
+/*Navbar*/
+.nav {
+-webkit-user-select: none;    
+user-select: none;
+position: var(--p);
+width: 100%;
+padding: 0.75rem 2rem;
+max-height: 100px;
+background-color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-family: 'Bebas Neue', cursive;
+animation-name: navbar;
+animation-duration:7s;
+border-bottom: 2px solid red;
+}
+
+@keyframes navbar {
+from{opacity: 0.5;}
+to{opacity:1;}
+}
+
+.logo-img {
+    height: 150px;
+    position: relative;
+    width: 200px;
+}
+
+
+.title1, .title2 {
+    font-size: 2.5rem;
+    position: relative;
+    animation-name: title;
+    animation-duration: 2s;
+    animation-play-state: running;
+}
+
+.title1 {
+    text-shadow: 1px 1px red;
+}
+
+ /* Big title */
+
+
+.mid-title {
+    font-size: 2.5rem;
+    font-family: 'Press Start 2P', cursive;
+    animation: title-rotate;
+    animation-delay: 4s;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+
+@keyframes title-rotate {
+    0% {transform: rotateX(0deg);}
+    50% {transform: rotateX(180deg);}
+    100% {transform: rotateX(0deg);}
+}
+
+.title3 {
+    position: relative;
+    color: red;
+    text-shadow: 1px 1px black;
+    animation-name: title3;
+    animation-duration: 2s;
+    animation-play-state: running;
+}
+
+@keyframes title3 {
+    from{
+        top: -300px;
+        opacity: 0.5;
+    }
+    to{top: 0px;
+    opacity: 1;}
+}
+
+
+
+@keyframes title {
+    from{
+        right: -200px;
+        opacity: 0.5;
+    }
+    to{right: 0px;
+    opacity: 1;}
+}
+
+.title2 {
+color: red;
+text-shadow: 1px 1px black;
+}
+
+
+
+/* Section */
+.dynamic-p {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.menu-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+
+.menu {
+    height: 400px;
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 5px;
+}
