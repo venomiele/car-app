@@ -133,6 +133,10 @@ text-shadow: 1px 1px black;
 
 /* Section */
 
+.lastname {
+    color: white !important;
+}
+
 .dynamic-p {
     position: relative;
     z-index: 2;
@@ -195,4 +199,5 @@ text-shadow: 1px 1px black;
 .btn:hover {
 cursor: pointer;
 box-shadow: 2px 2px 8px black;
+text-shadow: 1px 1px 5px white;
 }
